@@ -1,11 +1,17 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import SearchForm from './components/SearchForm';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
-    
-    </div>
+    <Router>
+      <Home/>
+      <SearchForm/>
+    </Router>
+
   );
 }
 
